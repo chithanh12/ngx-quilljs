@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "NgxQuillEditor": {
+      "root": "projects/ngx-quill-editor",
+      "sourceRoot": "projects/ngx-quill-editor/src",
+      "projectType": "library",
+      "prefix": "NgxQuill",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-quill-editor/tsconfig.lib.json",
+            "project": "projects/ngx-quill-editor/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-quill-editor/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-quill-editor/src/test.ts",
+            "tsConfig": "projects/ngx-quill-editor/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-quill-editor/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-quill-editor/tsconfig.lib.json",
+              "projects/ngx-quill-editor/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-quilljs"

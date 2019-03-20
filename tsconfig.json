@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "NgxQuillEditor": [
+        "dist/ngx-quill-editor"
+      ],
+      "NgxQuillEditor/*": [
+        "dist/ngx-quill-editor/*"
+      ]
+    }
   }
 }
