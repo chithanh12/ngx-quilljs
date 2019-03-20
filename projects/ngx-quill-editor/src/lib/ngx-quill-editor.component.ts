@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'NgxQuill-NgxQuillEditor',
+  selector: 'NgxQuillEditor',
   template: `
-    <p>
-      ngx-quill-editor works!
-    </p>
+    <div id="__quill-editor__"></div>
   `,
   styles: []
 })
 export class NgxQuillEditorComponent implements OnInit {
+  @Input() enableEmoji: boolean = true;
+  @Input() enablemention: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
