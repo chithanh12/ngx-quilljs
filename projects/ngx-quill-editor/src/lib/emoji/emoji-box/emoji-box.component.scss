@@ -1,0 +1,51 @@
+$container-height: 400px;
+$container-width: 250px;
+$header-height: 30px;
+$footer-height: 40px;
+$search-height: 40px;
+
+.emoji-box-container {
+  width: $container-width;
+  height: $container-height;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-between;
+  background: red;
+  
+  .header {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: $header-height;
+    list-style: none;
+    align-items: center;
+    align-content: space-between;
+
+    .tab {
+      padding: 2px;
+      flex: 1 0 auto;
+    }
+  }
+
+  .search {
+    height: $search-height;
+    flex: 1 0 auto;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .emoji-list {
+    height: calc($container-height - $header-height-$search-height - $footer-height);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .emoji-item {
+      width: 24px;
+      height: 24px;
+      flex: 1 0 auto;
+    }
+  }
+}

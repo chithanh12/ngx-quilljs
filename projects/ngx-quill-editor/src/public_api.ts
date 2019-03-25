@@ -5,3 +5,4 @@
 export * from './lib/ngx-quill-editor.service';
 export * from './lib/ngx-quill-editor.component';
 export * from './lib/ngx-quill-editor.module';
+export * from './lib/ngx-quill-editor.models';;;

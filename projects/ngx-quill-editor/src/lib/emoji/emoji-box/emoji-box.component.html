@@ -1,0 +1,19 @@
+<div class="emoji-box-container">
+  <div class="toolbar" id="tab-toolbar">
+    <ul>
+      <li *ngFor="let tab of emojiTypes" [class.active]="tab.name === selectedCategory" class="emoji-tab filter-{{tab.name}}">
+        <div class="i-{{tab.icon}}"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="search">
+    <input type="text">
+  </div>
+  <div class="emoji-list">
+    <span *ngFor="let em of filteredEmojiList" class="bem bem-{{em.name}} ap ap-{{em.name}}">{{em.code_decimal}} </span>
+  </div>
+
+  <div class="footer">
+
+  </div>
+</div>
