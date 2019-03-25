@@ -122,7 +122,7 @@
         }
       }
     },
-    "NgxQuillEditor": {
+    "ngx-quill-editor": {
       "root": "projects/ngx-quill-editor",
       "sourceRoot": "projects/ngx-quill-editor/src",
       "projectType": "library",

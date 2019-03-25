@@ -7,7 +7,7 @@ import emojiList from '../emoji-list';
 @Component({
   selector: 'ngx-emoji-box',
   templateUrl: './emoji-box.component.html',
-  styleUrls: ['./emoji-box.component.scss', './../../../assets/scss/quill-emoji.scss']
+  styleUrls: ['./emoji-box.component.scss']
 })
 export class EmojiBoxComponent implements OnInit, OnDestroy {
   @Output() onSelect: EventEmitter<EmojiModel> = new EventEmitter();
